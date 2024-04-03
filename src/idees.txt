@@ -1,0 +1,33 @@
+grande grille contient vecteurs gradients
+vecteurs gradients [(1,1),(1,-1),(-1,1),-1 ,-1)] et/ou [(0,1),(1,0),(-1,0),(0,-1)]
+ou remplacer 1 par sqrt(2) pour que les vecteurs aient tous la même logueur
+grande case se décompose en grille taille 1 origine en haut à gauche (comme pixels image)
+
++ de cases = plus de détail
+cases peuvent carrés mais aussi rectangles
+
+petite grille contient pixels
+pour calculre valeur petite case :
+scalaire vecteur gradient et vecteur distance (entre coin grande case et petite case) pour 4 coins
+(Pour résultat final plus propre, passer valeur dans fade function (6t^5 - 15t^4 + 10t^3)), puis
+interpolation linéaire entre pour coins haut et coins bas, puis dernière interpolation avec 2 valeurs obtenues.
+
+classe vecteur
+contient 2 coordonnées
+
+classe perlin noise
+contient une grille de valeurs
+une méthode pour remplir cette grille
+une méthode pour convertir cette grille en image
+
+demande nb cases par grande cases
+demande combien de grandes cases voulues (définis taille image finale)
+
+classe case
+contient 4 vecteurs
+n*n
+méthode pour remplir valeurs
+
+
+grille de petites grilles
+méthode pour tout parcourir et mettre dans une grille finale
