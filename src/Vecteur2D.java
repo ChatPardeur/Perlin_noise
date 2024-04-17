@@ -16,11 +16,18 @@ public class Vecteur2D
         return ThreadLocalRandom.current().nextInt(min, max + 1);
     }
 
+    public Vecteur2D(int x, int y)
+    {
+        this.x = x;
+        this.y = y;
+    }
+
     public Vecteur2D() {
         Random random = new Random();
         this.x = randint(-1,1);
         this.y = randint(-1,1);
     }
+
 
     public String toString()
     {

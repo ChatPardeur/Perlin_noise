@@ -7,7 +7,7 @@ grande case se décompose en grille taille 1 origine en haut à gauche (comme pi
 cases peuvent carrés mais aussi rectangles
 
 petite grille contient pixels
-pour calculre valeur petite case :
+pour calculer valeur petite case :
 scalaire vecteur gradient et vecteur distance (entre coin grande case et petite case) pour 4 coins
 (Pour résultat final plus propre, passer valeur dans fade function (6t^5 - 15t^4 + 10t^3)), puis
 interpolation linéaire entre pour coins haut et coins bas, puis dernière interpolation avec 2 valeurs obtenues.
