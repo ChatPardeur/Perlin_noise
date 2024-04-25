@@ -10,6 +10,7 @@ public class Case
 
     public Case(int n, ArrayList<Vecteur2D> listeVecteurs)
     {
+        this.taille = n;
         this.tabValeurs = new int[n][n];
         this.listeVecteurs = listeVecteurs;
     }
@@ -25,10 +26,26 @@ public class Case
 
 
         listeVecteurs.add(new Vecteur2D(x+1, y+1));
+        System.out.println(x + "+" + 1 + " " + y + "+" + 1);
         listeVecteurs.add(new Vecteur2D(x- taille, y+1));
+        System.out.println(x + "-" + taille + " " + y + "+" + 1);
+
         listeVecteurs.add(new Vecteur2D(x+1, y-taille));
+        System.out.println(x + "+" + 1 + " " + y + "-" + taille);
+
         listeVecteurs.add(new Vecteur2D(x-taille, y-taille));
+        System.out.println(x + "-" + taille + " " + y + "-" + taille);
 
         return listeVecteurs;
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Vecteur2D> liste = new ArrayList<>();
+        for (int i = 0; i < 4; i++) {
+            liste.add(new Vecteur2D());
+        }
+        System.out.println(liste);
+        Case c = new Case(6, liste);
+        System.out.println(c.trouveVecteursdistance(4,2));
     }
 }

@@ -50,11 +50,4 @@ public class Vecteur2D
         this.y = y;
     }
 
-    public static void main(String[] args)
-    {
-        for (int i = 0; i < 18; i++) {
-            Vecteur2D v = new Vecteur2D();
-            System.out.println(v);
-        }
-    }
 }
